@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Turismo",
+    "description": "Preguntas relacionadas a gastronomía, idiomas y otras expresiones culturales."
+  },
+  {
+    "category": "Música",
+    "description": "Preguntas relacionadas con generos de música, temas musicales, cantantes."
+  },
+  {
+    "category": "Deportes",
+    "description": "Preguntas relacionadas con deportistas, premios, concursos."
+  },
+  {
+    "category": "Películas",
+    "description": "Preguntas relacionadas con generos de películas, premios, artistas."
+  },
+  {
+    "category": "Series",
+    "description": "Preguntas relacionadas con las series más populares y legendarias de la pequeña pantalla ."
+  },
+  {
+    "category": "Libros",
+    "description": "Preguntas relacionadas con generós, autores, escritores"
+  }
+]
