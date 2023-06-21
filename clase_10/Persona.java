@@ -1,20 +1,21 @@
 package clase_10;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Persona {
     private int id;
     private String nombre;
     private int edad;
-    private Date fechaNacimiento;
+    private String fechaNacimiento;
     private String dni;
 
     public Persona(int id, String nombre, int edad, String fechaNacimiento, String dni){
-        this.id = 0;
-        this.nombre = "";
-        this.edad = 0;
-        this.fechaNacimiento = null;
-        this.dni = "";
+        this.id = id;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.fechaNacimiento = fechaNacimiento;
+        this.dni = dni;
     }
 
     /**
@@ -44,7 +45,7 @@ public class Persona {
         this.edad = edad;
     }
 
-    public Date getFechaNacimiento(){
+    public String getFechaNacimiento(){
         return fechaNacimiento;
     }
 

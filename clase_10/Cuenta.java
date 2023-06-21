@@ -5,8 +5,8 @@ public class Cuenta {
     private double cantidad;
 
     public Cuenta(String titular, double cantidad){
-        this.titular = "";
-        this.cantidad = 0;
+        this.titular = titular;
+        this.cantidad = cantidad;
     }
 
     public String getTitular() {
@@ -25,4 +25,18 @@ public class Cuenta {
         this.cantidad = cantidad;
     }
 
+    public void showDataAccount(){
+        System.out.print("\nNombre del Titular: " + titular +
+                         "\nCantidad: "  + cantidad);
+    }
+
+    public void quantityEnter(double cantidad){
+        if(cantidad > 0){
+          this.cantidad += cantidad;
+        }
+    }
+
+    public void quantityOutput(double cantidadRetirada){
+        this.cantidad -= cantidadRetirada;
+    }
 }
