@@ -1,7 +1,0 @@
-{
-    "category": "Películas",
-    "question": "¿La última película ganó los Oscar?",
-    "options": ["Todo en todas partes, todo a la vez, 2022", "El Gato con Botas", "Super Mario Bros"],
-    "answer": 0,
-    "explanation": "Todo a la vez en todas partes' fue la ganadora en la 95ª edición de los premios de la Academia."
-}
