@@ -33,13 +33,13 @@ public class PersonajeBase {
         System.out.println(nombre + " ataca a " + enemigo);
     }
 
-    public void recibeDano(String nombre, int cantidad){
-        puntosDeVida -= cantidad;
+    public void recibeDanio(String nombre, int cantidadDanio){
+        puntosDeVida -= cantidadDanio;
         System.out.println(nombre + " recibe daño y le quedan " + puntosDeVida + " puntos de vida");
     }
 
-    public void curarse(String nombre, int cantidad){
-        puntosDeVida += cantidad;
-        System.out.println(nombre + " se esta curando y tiene " + puntosDeVida + " puntos de vida");
+    public void curarse(String nombre, int cantidadCura){
+        puntosDeVida += cantidadCura;
+        System.out.println(nombre + " se ha recuperado con " + cantidadCura + " puntos de curación y tiene " + puntosDeVida + " puntos de vida");
     }
 }
