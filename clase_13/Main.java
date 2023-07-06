@@ -26,6 +26,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("La suma de todas las area es: ");
+                    sumatoriaAreas();
                     break;
                 case 3:
                     stateMenu = false;
@@ -35,7 +36,7 @@ public class Main {
 
     }
 
-    private static void sumatoriaAres(){
+    private static void sumatoriaAreas(){
         double sumatoria = 0;
         for (FiguraBase figura : figuras){
             sumatoria += figura.calcularArea();
