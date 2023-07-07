@@ -8,11 +8,14 @@ public class Main {
 
     static List<FiguraBase> figuras = new ArrayList<>();
     public static void main(String[] args){
+        menuFiguras();
+    }
 
+    private static void menuFiguras(){
         Boolean stateMenu = true;
 
         while(stateMenu){
-            System.out.println("******** MENU ***********");
+            System.out.println("\n******** MENU ***********");
             System.out.println("1) Crear una figura");
             System.out.println("2) Mostrar la sumatoria del area de las figuras");
             System.out.println("3) Salir");
@@ -25,7 +28,6 @@ public class Main {
                     crearFigura();
                     break;
                 case 2:
-                    System.out.println("La suma de todas las area es: ");
                     sumatoriaAreas();
                     break;
                 case 3:
@@ -33,7 +35,6 @@ public class Main {
                     break;
             }
         }
-
     }
 
     private static void sumatoriaAreas(){
@@ -41,7 +42,12 @@ public class Main {
         for (FiguraBase figura : figuras){
             sumatoria += figura.calcularArea();
         }
-        System.out.println("La suma de todas las area es: " + sumatoria);
+        if (sumatoria == 0){
+            System.out.println("Debe crear al menos una figura");
+        }else{
+            System.out.println("La suma de todas las areas es: " + sumatoria);
+        }
+
     }
 
     private static void crearFigura() {
