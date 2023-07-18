@@ -1,4 +1,4 @@
-package clase_16;
+package clase_16.diagramaTrivia;
 
 public class DiagramaERTrivia {
     /**
