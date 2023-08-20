@@ -27,10 +27,10 @@ public class Main {
         temperaturas.forEach(tempFahrenheit ->{
             Float tempCelsius = (tempFahrenheit - 32) * 0.5556f;
             resultado.add(tempCelsius);
-            System.out.println(tempCelsius);
+            System.out.println(tempCelsius); (tempFahrenheit -> tempFahrenheit - 32) * 0.5556f).toList();
         });*/
 
-        List<Float> resultado = temperaturas.stream().map(tempFahrenheit -> tempFahrenheit - 32) * 0.5556f).toList();
+        List<Float> resultado = temperaturas.stream().map(tempFahrenheit -> (tempFahrenheit-32) * 0.5556f).toList();
 
         resultado.forEach(temperatura -> {
             System.out.println("La temperatura es " + temperatura);
